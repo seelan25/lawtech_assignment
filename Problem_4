@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Interest Solver</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Calibri, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      background: #fff;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    .step {
+      margin: 20px 0;
+      padding: 15px;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+    .highlight {
+      background: yellow;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .fraction {
+      display: inline-block;
+      text-align: center;
+    }
+    .fraction span {
+      display: block;
+    }
+    .fraction .top {
+      border-bottom: 2px solid #000;
+    }
+    .numberBox {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 0 4px;
+      background: #eee;
+      border: 1px solid #333;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Simple Interest Problem</h2>
+    <p>Question: Find the simple interest on ₹5000 for 3 years at 8% per annum.</p>
+
+    <div class="step">
+      Formula: <span class="highlight">SI = (P × R × T) / 100</span>
+    </div>
+
+    <div class="step">
+      Substitute values:
+      <div>
+        SI = 
+        <span class="fraction">
+          <span class="top">5000 × 8 × 3</span>
+          <span class="bottom">100</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="step">
+      Multiply: 
+      <div>
+        SI = 
+        <span class="fraction">
+          <span class="top">120000</span>
+          <span class="bottom">100</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="step">
+      Simplify: SI = <span class="numberBox">1200</span>
+    </div>
+
+    <div class="step">
+      Final Answer: <span class="highlight">₹1200</span>
+    </div>
+  </div>
+</body>
+</html>
