@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compound Interest Solver</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Calibri, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      background: #fff;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    .step {
+      margin: 20px 0;
+      padding: 15px;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+    .highlight {
+      background: yellow;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .fraction {
+      display: inline-block;
+      text-align: center;
+    }
+    .fraction span {
+      display: block;
+    }
+    .fraction .top {
+      border-bottom: 2px solid #000;
+    }
+    .numberBox {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 0 4px;
+      background: #eee;
+      border: 1px solid #333;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Compound Interest Problem</h2>
+    <p>Question: A sum of ₹4000 amounts to ₹4840 in 2 years at compound interest. Find the rate of interest.</p>
+
+    <div class="step">
+      Formula: <span class="highlight">A = P (1 + R/100)<sup>T</sup></span>
+    </div>
+
+    <div class="step">
+      Substitute values: 
+      <div>
+        <span class="numberBox">4840</span> = 
+        <span class="numberBox">4000</span> (1 + R/100)<sup>2</sup>
+      </div>
+    </div>
+
+    <div class="step">
+      Divide both sides: 
+      <div>
+        <span class="fraction">
+          <span class="top">4840</span>
+          <span class="bottom">4000</span>
+        </span>
+        = (1 + R/100)<sup>2</sup>
+      </div>
+    </div>
+
+    <div class="step">
+      Simplify: <span class="numberBox">1.21</span> = (1 + R/100)<sup>2</sup>
+    </div>
+
+    <div class="step">
+      Square root: <span class="numberBox">1.1</span> = 1 + R/100
+    </div>
+
+    <div class="step">
+      Subtract 1: R/100 = <span class="numberBox">0.1</span>
+    </div>
+
+    <div class="step">
+      Multiply: R = <span class="highlight">10%</span>
+    </div>
+  </div>
+</body>
+</html>
